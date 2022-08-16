@@ -4,7 +4,7 @@ const db = new Sequelize({
     database: 'eduwork',
     username: 'admin',
     password: 'admin', 
-    host: 'localhost',
+    host: '127.0.0.1',
     dialect: 'mysql' 
 });
 
