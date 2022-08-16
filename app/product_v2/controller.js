@@ -50,7 +50,7 @@ const createProduct = async (req, res)=>{
         const target = path.join(__dirname, '../../uploads', image.originalname);
         fs.renameSync(image.path, target)
         try{
-            // await Product.sync();
+            await Product.sync();
             const result = await Product.create({users_id, name, price, stock, status, image_url: `http://localhost:3000/public/${image.originalname}`})
             res.status(200).json({result})
         } catch (e){
