@@ -5,7 +5,7 @@ const path = require('path')
 const productRouter = require('./app/product/routes');
 const productRouterv2 = require('./app/product_v2/routes');
 const logger = require('morgan')
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 app.use(logger('dev'));
 app.use(express.urlencoded({extended: true}))
